@@ -61,9 +61,30 @@ input[type="search"]::-webkit-search-clear-button {
   background-color: #565656;
   box-shadow: 0px 0px 8px 2px #8a8a8a;
   border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
   height: 500px;
   margin: 50px auto;
   width: 500px;
+}
+
+.login-card-button {
+  font-size: 22px;
+  height: 50%;
+  width: fit-content;
+}
+
+.login-card-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16%;
+  width: 100%;
+}
+
+.login-card-input {
+  height: 50%;
+  width: 80%;
 }
 
 .login-card-label {
