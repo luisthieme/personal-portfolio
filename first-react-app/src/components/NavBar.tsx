@@ -13,6 +13,8 @@ interface linkObjekts {
 interface NavBarProps {
     pageTitle: string;
     pageLinks: linkObjekts[];
+    isUserLoggedIn: boolean;
+    username: string;
 }
 
 export default function NavBar(props: NavBarProps) {
@@ -46,7 +48,7 @@ export default function NavBar(props: NavBarProps) {
     return (
         <div className="navBarContainer">
             <div className="navBarTitleContainer">
-                <LoginButton></LoginButton>
+                <LoginButton isUserLoggedIn={props.isUserLoggedIn} username={props.username}></LoginButton>
                 <h1 className="pageHeading">LUIS THIEME</h1>
                 <SearchBar></SearchBar>
             </div>
