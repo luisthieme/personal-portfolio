@@ -1,3 +1,8 @@
+* {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
 a {
   text-decoration: none;
 }
@@ -13,7 +18,7 @@ body {
 
 .dropDownButton {
   border-radius: 0.25em;
-  background-color: #353535;
+  background-color: #151515;
   border: none;
   color: #8A897C;
   cursor: pointer;
@@ -36,19 +41,27 @@ body {
 }
 
 input[type="search"]::-webkit-search-clear-button {
-  appearance: none;
+  appearance: hidden;
 }
 
 .loginButton {
-  align-self: center;
-  background-color: #252525;
+  background-color: #151515;
   border-style: none;
-  border-radius: 1rem;
-  color: white;
-  font-size: 25px;
+  border-radius: 0.25em;
+  color: #8A897C;
+  cursor: pointer;
+  font-size: 30px;
   height: fit-content;
   margin: 30px auto;
+  padding: 10px;
+  transition: all 0.35s ease;
+  text-align: center;
   width: fit-content;
+}
+
+.loginButton:hover {
+  background-color: rgb(42, 41, 41);
+  color: #BDBBB0;
 }
 
 @media (max-width: 500px) {
@@ -58,7 +71,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 .login-card {
-  background-color: #565656;
+  background-color: #252525;
   box-shadow: 0px 0px 8px 2px #8a8a8a;
   border-radius: 1.5rem;
   display: flex;
@@ -69,9 +82,20 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 .login-card-button {
-  font-size: 22px;
-  height: 50%;
+  align-self: center;
+  background-color: #151515;
+  border-color: white;
+  border-style: solid;
+  color: white;
+  font-size: 25px;
+  height: fit-content;
+  margin: 30px auto;
+  transition: all 0.3s ease;
   width: fit-content;
+}
+
+.login-card-button:hover {
+  box-shadow: 0px 0px 8px 2px #8a8a8a;
 }
 
 .login-card-inner-container {
@@ -85,6 +109,16 @@ input[type="search"]::-webkit-search-clear-button {
 .login-card-input {
   height: 50%;
   width: 80%;
+  background-color: #252525;
+  border-color: whitesmoke;
+  border-style: solid;
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+.login-card-input:focus {
+  outline: none;
 }
 
 .login-card-label {
@@ -187,7 +221,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 :root {
-  background-color: #353535;
+  background-color: #151515;
   color: rgba(255, 255, 255, 0.87);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -230,7 +264,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 .searchBarSubmitButton:hover {
-  background-color: #353535;
+  background-color: #151515;
 }
 
 @media (max-width: 500px) {
@@ -355,7 +389,7 @@ input[type="search"]::-webkit-search-clear-button {
 }
 
 .ticTacToeResetButton {
-  background-color: #353535;
+  background-color: #151515;
   border: solid;
   border-width: 2px;
   border-radius: 0.25em;
